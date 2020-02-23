@@ -58,6 +58,9 @@ Vue.use(VueGoogleMaps, {
 
 Vue.config.productionTip = false
 
+
+
+
 // const router = new VueRouter({
 //   routes: [
 //     { path: '/', component: Content, meta: { scrollToTop: true } },
