@@ -1,6 +1,6 @@
 <template>
-  <b-carousel ref="myCarousel" id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" no-animation controls indicators interval=0 img-width="1024" img-height="480">
-    <b-carousel-slide caption="First slide" img-src="https://picsum.photos/1024/480/?image=10">
+  <b-carousel ref="myCarousel" id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" no-animation controls indicators :interval="0" img-height="450px" img-width="250px">
+    <b-carousel-slide >
       <div>
         <b-card title="Card Title" img-src="https://picsum.photos/600/300/?image=25" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
           <b-card-text>
@@ -11,9 +11,9 @@
         </b-card>
       </div>
     </b-carousel-slide>
-    <b-carousel-slide caption="Second Slide" img-src="https://picsum.photos/1024/480/?image=12"></b-carousel-slide>
-    <b-carousel-slide caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
-    <b-carousel-slide caption="Fourth Slide" img-src="https://picsum.photos/1024/480/?image=23"></b-carousel-slide>
+    <b-carousel-slide ></b-carousel-slide>
+    <b-carousel-slide ></b-carousel-slide>
+    <b-carousel-slide ></b-carousel-slide>
   </b-carousel>
 </template>
 

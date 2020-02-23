@@ -58,21 +58,19 @@ Vue.use(VueGoogleMaps, {
 
 Vue.config.productionTip = false
 
-// const router = new VueRouter({
-//   routes: [
-//     { path: '/', component: Content, meta: { scrollToTop: true } },
-//     { path: '/Content2', component: Content2, meta: { scrollToTop: true }},
-//     { path: '/Kontakt', component: Contact, meta: { scrollToTop: true }},
+// Use beforeEach route to set the language
+router.beforeEach((to, from, next) => {
 
+  // Use the language from the routing param or default language
+  let language = to.params.lang;
+  if (!language) {
+    language = 'ee'
+  }
 
-//   ],
-//   mode: 'history',
-//   scrollBehavior () {
-//     return { x: 0, y: 0 }
-//   }
-// })
-
-
+  // Set the current language  for i18n.
+  i18n.locale = language
+  next()
+});
 
 new Vue({
   router,
