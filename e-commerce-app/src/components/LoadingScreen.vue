@@ -23,7 +23,6 @@ export default {
  padding-top: 20vh;
   font-size: 32px;
   left: 0;
-  overflow: hidden;
   position: fixed;
   right: 0;
   text-align: center;

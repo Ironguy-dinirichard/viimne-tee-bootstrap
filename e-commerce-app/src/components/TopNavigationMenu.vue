@@ -101,9 +101,6 @@ p {
 .header {
   z-index: 2;
 }
-select{
-  margin: 0px;
-  padding: 0px;
-}
+
 
 </style>

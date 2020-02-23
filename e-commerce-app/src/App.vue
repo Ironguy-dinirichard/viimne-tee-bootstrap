@@ -1,12 +1,12 @@
 <template>
   <div id="app">
 <LoadingScreen :isLoading="isLoading" />
-    <div v-if="!isLoading">
+    <main v-if="!isLoading"/>
     <TopNavigationMenu />
     <router-view />
     <Footer />
 </div>
-  </div>
+  
 </template>
 
 <script>
@@ -21,8 +21,16 @@ export default {
     TopNavigationMenu,
     Footer,
     LoadingScreen,
+  }
+  ,
+  data() {
+    return { isLoading: true };
   },
-  
+  mounted () {
+    setTimeout(() => {
+      this.isLoading = false
+    }, 3000)
+  }
 };
 
 
