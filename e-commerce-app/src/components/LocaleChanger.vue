@@ -3,7 +3,7 @@
     <v-select v-model="$i18n.locale" :items="langs" item-text="langs" chips dense></v-select>
   </v-col> -->
 
-  <b-form-select v-model="$i18n.locale" :options="langs" class="mb-3" value-field="langs" text-field="langs" disabled-field="notEnabled"></b-form-select>
+  <b-select v-model="$i18n.locale" :options="langs" ></b-select>
 
   <!-- <b-button :v-for="lang in langs" v-bind:key="i">{{ lang }} x</b-button> -->
 </template>
@@ -20,4 +20,7 @@ export default {
   }
 };
 </script>
+<style scoped>
+
+</style>
 

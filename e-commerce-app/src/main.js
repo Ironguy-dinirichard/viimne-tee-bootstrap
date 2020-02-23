@@ -20,7 +20,7 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 
 import router from './router'
 import i18n from './i18n'
-import vuetify from './plugins/vuetify';
+
 
 
 
@@ -77,7 +77,7 @@ Vue.config.productionTip = false
 new Vue({
   router,
   i18n,
-  vuetify,
+  
 
   // router: router,
   render: h => h(App),

@@ -1,24 +1,31 @@
 <template>
   <div id="app">
-
+<LoadingScreen :isLoading="isLoading" />
+    <div v-if="!isLoading">
     <TopNavigationMenu />
     <router-view />
     <Footer />
-
+</div>
   </div>
 </template>
 
 <script>
 import TopNavigationMenu from "./components/TopNavigationMenu.vue";
 import Footer from "./components/Footer.vue";
+import LoadingScreen from "./components/LoadingScreen";
+
 
 export default {
   name: "App",
   components: {
     TopNavigationMenu,
-    Footer
-  }
+    Footer,
+    LoadingScreen,
+  },
+  
 };
+
+
 </script>
 
 <style lang="scss">

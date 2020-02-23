@@ -9,9 +9,9 @@
             <ios-call-icon w="20px" h="20px" /> 24H ddddd </p>
         </a>
 
-        <b-navbar toggleable="lg">
+        <b-navbar toggleable="lg" class="navi">
 
-          <b-navbar-brand to="/" class="back">
+          <b-navbar-brand to="/" class="back" >
             <img src="https://firebasestorage.googleapis.com/v0/b/viimnetee-2147d.appspot.com/o/viimne_tee.png?alt=media&token=983d2330-e423-4b90-b2b9-090cbad7f2ef" alt="Logo" class="back">
           </b-navbar-brand>
 
@@ -94,4 +94,9 @@ p {
 .header {
   z-index: 2;
 }
+select{
+  margin: 0px;
+  padding: 0px;
+}
+
 </style>
