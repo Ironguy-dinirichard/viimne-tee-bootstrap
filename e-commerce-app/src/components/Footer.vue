@@ -2,13 +2,14 @@
 <div class="footer">
   <b-container>
     <b-row class="text-center ">
-     <b-col sm="7"> lkm ds</b-col>
-     <b-col sm="5"> 
-        <strong>OÜ Matusebüroo Viimne Tee</strong>
+     <b-col sm="7"> 
+       <strong>OÜ Matusebüroo Viimne Tee</strong>
         <p>Registrikood : 	11463720</p>
         <p>Riia maantee 48, 80019 Pärnu</p>
         <p>Kontor avatud: E-R 9-16, L 9-13</p>
-        <br>
+     </b-col>
+     <b-col sm="5"> 
+       
         <strong>Lahkunute transport 24H</strong>
       
         <a href="tel:+372555515" class="number"><p><ios-call-icon w="20px" h="20px" /> Telefon +372 Siia tuleb number </p>  </a>
