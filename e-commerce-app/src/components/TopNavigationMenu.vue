@@ -11,7 +11,7 @@
 
         <b-navbar toggleable="lg" class="navi">
 
-          <b-navbar-brand to="/" class="back" >
+          <b-navbar-brand :to="`/${ $i18n.locale }/`" class="back">
             <img src="https://firebasestorage.googleapis.com/v0/b/viimnetee-2147d.appspot.com/o/viimne_tee.png?alt=media&token=983d2330-e423-4b90-b2b9-090cbad7f2ef" alt="Logo" class="back">
           </b-navbar-brand>
 
@@ -24,9 +24,9 @@
 
               <b-nav-item :to="`/${ $i18n.locale }/`">{{ $t("nav.about")}}</b-nav-item>
               <b-nav-item-dropdown class="dd-menu" :text="$t('nav.service')" no-caret>
-                <b-dropdown-item to="/Content2">{{ $t("nav.services.funeral")}}</b-dropdown-item>
+                <b-dropdown-item :to="`/${ $i18n.locale }/Content2`">{{ $t("nav.services.funeral")}}</b-dropdown-item>
                 <b-dropdown-item href="#">{{ $t("nav.services.cremation")}}</b-dropdown-item>
-                <b-dropdown-item to="/Galerii">{{ $t("nav.services.specialOccasion")}}</b-dropdown-item>
+                <b-dropdown-item :to="`/${ $i18n.locale }/Galerii`">{{ $t("nav.services.specialOccasion")}}</b-dropdown-item>
 
               </b-nav-item-dropdown>
               <b-nav-item :to="`/${ $i18n.locale }/Price`">{{ $t("nav.price")}}</b-nav-item>
@@ -101,6 +101,4 @@ p {
 .header {
   z-index: 2;
 }
-
-
 </style>
