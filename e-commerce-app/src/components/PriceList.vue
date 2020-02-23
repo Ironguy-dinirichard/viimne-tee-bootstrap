@@ -6,8 +6,7 @@
       </b-card-header>
       <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
-          <b-card-text>{{ text }}</b-card-text>
+          <Carousel />
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -34,13 +33,11 @@
       </b-collapse>
     </b-card>
 
-    <LocaleChanger #LocaleChanger />
-
   </div>
 </template>
 
 <script>
-import LocaleChanger from "./LocaleChanger";
+import Carousel from "./Carousel";
 
 export default {
   data() {
@@ -58,7 +55,7 @@ export default {
     };
   },
   components: {
-    LocaleChanger
+    Carousel
   }
 };
 </script>

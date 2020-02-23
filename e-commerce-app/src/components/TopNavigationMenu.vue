@@ -38,7 +38,10 @@
               <div class="nav-stick">
 
               </div>
-              <LocaleChanger />
+              <b-button-group>
+                <b-button @click="setLocale('ee')">Est</b-button>
+                <b-button @click="setLocale('ru')">Rus</b-button>
+              </b-button-group>
 
             </b-navbar-nav>
           </b-collapse>
@@ -51,15 +54,19 @@
 </template>
 
 <script>
-import LocaleChanger from "./LocaleChanger";
-
 export default {
   name: "NavigationMenu",
   props: {
     name: String
   },
-  components: {
-    LocaleChanger
+  components: {},
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+      this.$router.push({
+        params: { lang: locale }
+      });
+    }
   }
 };
 </script>
