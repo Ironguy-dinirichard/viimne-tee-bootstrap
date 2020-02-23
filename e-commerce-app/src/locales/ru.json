@@ -1,0 +1,17 @@
+{
+  "message": "bonjour i18n !!",
+  "nav": {
+    "about": "О нас",
+    "service": "Наши услуги",
+    "services": {
+      "funeral": "Погребение",
+      "cremation": "Отправка в кремацию",
+      "specialOccasion": "Oсобый случай"
+    },
+    "price": "Прайс-лист",
+    "planning": "Планирование похорон",
+    "grieving": "Справиться с горем",
+    "contact": "контакт",
+    "flowers": "Доставка цветов"
+  }
+}

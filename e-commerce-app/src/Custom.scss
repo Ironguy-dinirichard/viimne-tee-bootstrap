@@ -1,0 +1,71 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import '~vue-ionicons/ionicons.scss';
+
+
+
+
+
+  .sticky {
+    position: fixed;
+    width: 100%;
+   
+  }
+
+  h3{
+    color:red
+    
+}
+  
+  .dropdown {
+    
+     
+    .dropdown-item:active {
+      color: #fff;
+      text-decoration: none;
+      background-color: rgb(175, 144, 87);
+  }
+
+  .dropdown-menu{
+    background: #fff;
+    border: none;
+    
+    border-radius: 0 !important;
+  
+  }
+   
+
+  }
+  .navbar{
+    background-color: rgb(209, 224, 187);
+    padding-left: 16;
+    padding-right: 16;
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+  @media screen and (min-width: 600px) {
+    .nav-stick{
+      border-left: 2px solid rgba(0, 0, 0, 0.5);
+      top: 0;
+      margin-right: 3px;
+      
+    }
+    
+  }
+  .number:link{
+  
+    text-decoration: none;
+   
+   }
+   .number{
+     color:rgba(0, 0, 0, 0.5) ;
+   }
+ 
+ 
+
+  
+
+
+
+     
+

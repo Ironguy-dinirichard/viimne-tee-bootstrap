@@ -1,0 +1,17 @@
+{
+  "message": "Tere i18n !!",
+  "nav": {
+    "about": "Meist",
+    "service": "Meie teenused",
+    "services": {
+      "funeral": "matused",
+      "cremation": "tuhastamine",
+      "specialOccasion": "eriline sündmus"
+    },
+    "price": "Hinnakiri",
+    "planning": "Matuste planeerimine",
+    "grieving": "Toimetulek leinaga",
+    "contact": "Kontakt",
+    "flowers": "Saada lilled"
+  }
+}
