@@ -92,6 +92,7 @@ new Vue({
   router,
   i18n,
   
+  
 
   // router: router,
   render: h => h(App),
