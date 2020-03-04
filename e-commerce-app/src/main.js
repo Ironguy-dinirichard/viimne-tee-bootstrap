@@ -8,6 +8,10 @@ import BootstrapVue from 'bootstrap-vue'
 import AllIosIcon from 'vue-ionicons/dist/ionicons-ios.js'
 import './Custom.scss'
 import Vuelidate from 'vuelidate'
+import Flickity from 'vue-flickity';
+import { BootstrapVueIcons } from 'bootstrap-vue'
+import 'bootstrap-vue/src/icons.scss'
+
 
 
 
@@ -30,6 +34,7 @@ Vue.use(Vuelidate)
 // Vue.use(VueRouter)
 Vue.use(AllIosIcon)
 Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyCiOiRU7nUcU_HGfe9zlch2-NBGopPGGNM',
@@ -89,6 +94,9 @@ router.beforeEach((to, from, next) => {
 });
 
 new Vue({
+  components: {
+    Flickity
+  },
   router,
   i18n,
   

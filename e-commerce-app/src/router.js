@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import i18n from "./i18n"
 
 import Content from './components/Content.vue'
-// import Content2 from './components/Content2.vue'
+import Content2 from './components/Content2.vue'
 // import Contact from './components/Contact.vue'
 import PriceList from './components/PriceList.vue'
 
@@ -24,6 +24,11 @@ const routes = [
         path: "/",
         name: "Home",
         component: Content
+      },
+      {
+        path: "/Content2",
+        name: "Content 2",
+        component: Content2
       },
       {
         path: 'Kontact',
