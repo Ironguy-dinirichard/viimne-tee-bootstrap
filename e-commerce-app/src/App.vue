@@ -5,22 +5,25 @@
     <TopNavigationMenu />
     <router-view />
     <Footer />
+   
 </div>
   
 </template>
 
 <script>
+import LoadingScreen from "./components/LoadingScreen";
 import TopNavigationMenu from "./components/TopNavigationMenu.vue";
 import Footer from "./components/Footer.vue";
-import LoadingScreen from "./components/LoadingScreen";
+
 
 
 export default {
   name: "App",
   components: {
+    LoadingScreen,
     TopNavigationMenu,
     Footer,
-    LoadingScreen,
+    
   }
   ,
   data() {

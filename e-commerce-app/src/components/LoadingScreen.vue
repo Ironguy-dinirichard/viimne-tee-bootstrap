@@ -1,6 +1,6 @@
 <template>
   <div :class="{ loader: true, fadeout: !isLoading }">
-      Welcome to Heaven!
+      
   </div>
 </template>
 
@@ -12,8 +12,9 @@ export default {
 </script>
 
 <style>
+@media only screen and (min-width: 1200px) {
 .loader {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/viimnetee-2147d.appspot.com/o/sugis.jpg?alt=media&token=55ff1946-4e9f-4c45-a2c5-30cb27ae4219");
+  background-image: inherit;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,12 +24,18 @@ export default {
  padding-top: 20vh;
   font-size: 32px;
   left: 0;
+  overflow: hidden;
   position: fixed;
   right: 0;
   text-align: center;
   top: 0;
   z-index: 200;
-}
+
+  
+}}
+
+
+
 
 .fadeout {
   animation: fadeout 2s forwards;

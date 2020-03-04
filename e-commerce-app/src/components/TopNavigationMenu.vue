@@ -1,5 +1,5 @@
 <template>
-  <transition>
+  
     <div class="nav-placeholder">
 
       <div class="header" id="myHeader">
@@ -50,7 +50,7 @@
 
       </div>
     </div>
-  </transition>
+ 
 </template>
 
 <script>
@@ -101,4 +101,13 @@ p {
 .header {
   z-index: 2;
 }
+
+.navi{
+  -webkit-box-shadow: 0px 40px 30px 10px rgb(218, 201, 204);
+    -moz-box-shadow: 0px 40px 30px 10px rgb(218, 201, 204);
+    box-shadow: 0px 40px 30px 10px rgb(218, 201, 204);
+
+    
+}
+
 </style>
